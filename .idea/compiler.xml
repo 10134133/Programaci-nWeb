@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="Practica1" target="17" />
       <module name="Practica1_ClienteHTTP" target="17" />
     </bytecodeTargetLevel>
   </component>
