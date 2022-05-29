@@ -80,9 +80,9 @@ public class WebScrapper {
                     postURL = url.concat(postURL);
                 }
                 salida = Jsoup.connect(postURL).method(Connection.Method.POST).data("asignatura","practica1").header("matricula","20180032").execute();
-
-                System.out.println("\nRespuesta del formulario POST #"+cont+": \n Status code=" + salida.statusCode() + " ,URL=" + salida.url());
-                System.out.println("\nHeaders: " + salida.headers());
+                System.out.println("---------------------------------------");
+                System.out.println("\n"+cont+"\n" + salida.statusCode() + "\n" + salida.url());
+                System.out.println(salida.headers());
                 System.out.println("---------------------------------------");
 
             } catch (IOException error) {
