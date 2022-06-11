@@ -2,16 +2,25 @@ plugins {
     id 'java'
 }
 
-group 'org.example'
+group 'org.sebastian'
 version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
-
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation group: 'io.javalin', name: 'javalin', version: '4.6.1'
+//thymeleaf
+    implementation group: 'org.thymeleaf', name: 'thymeleaf', version: '3.0.5.RELEASE'
+
+    //manejo de log.
+    testImplementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.28'
+
+
+    //Procesamiento JSON.
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.1'
 }
 
 test {
